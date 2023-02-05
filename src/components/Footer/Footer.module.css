@@ -1,0 +1,90 @@
+.footerWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.footerContainer {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 25px;
+}
+.title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 135%;
+
+  color: #ffffff;
+}
+.tagline {
+  font-family: "Sansation";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #8d8c85;
+}
+.text {
+  padding: 25px 0;
+}
+.taglineAndCircle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.circle {
+  width: 14px;
+  height: 14px;
+  background: #4d57ea;
+  border-radius: 50%;
+}
+.heading {
+  font-family: "Chiffon";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 130%;
+
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+.itemsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.item {
+  font-family: "Sansation";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  color: #7a7974;
+  padding: 4px 0;
+}
+.itemContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.arrow {
+  color: #7a7974;
+}
+
+@media only screen and (max-width: 991px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 75px 0;
+  }
+  .itemsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-gap: 40px 20px;
+  }
+}

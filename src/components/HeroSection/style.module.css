@@ -1,0 +1,150 @@
+.heroSectionContainer {
+  position: relative;
+  overflow: hidden;
+}
+.heroSection {
+  position: relative;
+  overflow: hidden;
+  padding: 60px 0;
+  padding-top: 80px;
+}
+.iconTitleTextWrapper {
+  max-width: 1199px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.blogButton {
+  font-family: "Sansation";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 112%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #f4f4f4;
+  background: #2a2a2d;
+  border: 1px solid #646462;
+  border-radius: 25px;
+  padding: 8px 15px;
+  margin-bottom: 30px;
+}
+.blogButton span {
+  color: #cfcfce;
+}
+.arrow {
+  color: #fff;
+}
+.title {
+  font-family: "Chiffon";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+
+  line-height: 115%;
+  text-align: center;
+  color: #ffffff;
+}
+.text {
+  padding: 40px 0;
+  text-align: center;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  font-family: "Sansation";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 144%;
+  text-align: center;
+  color: #7881ff;
+  background: rgba(77, 87, 234, 0.3);
+  border: 1px solid #6c76ff;
+  border-radius: 3px;
+  padding: 12px 28px;
+  display: block;
+  margin: 0 auto;
+}
+.image {
+  width: 100%;
+}
+.verticleLine {
+  position: absolute;
+  height: 110%;
+  left: 100px;
+  top: 0;
+  z-index: -1;
+}
+.horizontalLine {
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  left: 0;
+  z-index: -1;
+}
+.iconContainer {
+  position: absolute;
+  border-radius: 5px;
+  padding: 6px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  padding: 4px;
+  width: 40px;
+  height: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .title {
+    font-size: 80px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .heroSection {
+    padding-top: 100px;
+  }
+  .iconTitleTextWrapper {
+    padding-bottom: 70px;
+  }
+  .blogButton {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  .title {
+    font-size: 60px;
+  }
+  .text {
+    padding-top: 20px;
+    font-size: 16px;
+  }
+  .button {
+    font-size: 16px;
+  }
+  .br {
+    display: none;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .title {
+    font-size: 50px;
+  }
+  .iconTitleTextWrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .blogButton {
+    font-size: 14px;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+}

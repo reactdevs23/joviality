@@ -1,0 +1,49 @@
+.cardContainer1 {
+  margin-top: 80px;
+  height: 100%;
+}
+.cardContainer2 {
+  margin-top: 40px;
+  height: 100%;
+}
+.card1 {
+  background: radial-gradient(
+    77.37% 77.37% at 50% 50%,
+    rgb(147, 186, 238, 0.5) 0%,
+    rgba(147, 186, 238, 0.05) 100%
+  );
+
+  border-radius: 8px;
+}
+.card2 {
+  background: radial-gradient(
+    103.66% 103.66% at 50% 50%,
+    rgb(77, 87, 234, 0.5) 0%,
+    rgba(77, 87, 234, 0.05) 100%
+  );
+
+  border-radius: 8px;
+}
+.card3 {
+  background: radial-gradient(
+    80.82% 80.82% at 50% 50%,
+    rgb(107, 122, 180, 0.3) 0%,
+    rgba(107, 122, 180, 0.05) 100%
+  );
+
+  border-radius: 8px;
+}
+.image1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 991px) {
+  .cardContainer1,
+  .cardContainer2 {
+    margin: 0;
+  }
+  .card {
+    margin: 0;
+  }
+}
