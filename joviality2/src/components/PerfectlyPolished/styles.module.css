@@ -1,0 +1,73 @@
+.boxWrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.box {
+  background: rgb(30, 31, 36.5);
+}
+
+.perfectlyPolishedContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.perfectlyPolished {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+  padding-top: 90px;
+}
+.image {
+  width: 90%;
+}
+.title {
+  font-family: "Sansation";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 120%;
+  color: #ffffff;
+}
+.blur {
+  color: #4d57ea;
+  position: relative;
+}
+.blur::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(77, 87, 234, 0.2);
+  filter: blur(15.5px);
+  width: 100%;
+  height: 100%;
+}
+.secondTitle {
+  display: inline;
+}
+.secondTitle span {
+  color: #4d57ea;
+}
+.text {
+  padding-top: 25px;
+}
+.box {
+  background: url("/public/images/perfectlyPolishedBg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  opacity: 0.8;
+}
+@media only screen and (max-width: 767px) {
+  .title {
+    font-size: 40px;
+  }
+  .perfectlyPolished {
+    grid-template-columns: 1fr;
+  }
+  .image {
+    display: block;
+    margin: 0 auto;
+  }
+}
